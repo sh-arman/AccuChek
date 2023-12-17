@@ -7,10 +7,10 @@
     <meta name="description" content="SFS | Shaheen Food Product liveCheck | Shaheen Food suppliers | Shaheen LiveCheck | Panacea Live Ltd.">
     <meta name="Author" content="Shajedul Hasan Arman | armanhassan504@gmail.com" />
     <meta name="description" content="" />
-    <title>Login | Shaheen Food LiveCheck</title>
+    <title>Login | ACCU Chek Radiant LiveCheck</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('admin/assets/img/favicon/favicon.ico') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('front/images/panacealogo.png') }}" />
     <link
         href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet" />
@@ -31,16 +31,16 @@
                     <div class="authentication-wrapper authentication-basic container-p-y">
                         <div class="authentication-inner">
 
-                            <div class="card">
+                            <div class="card" style="background-color: #005670;">
                                 <div class="card-body">
                                     <div class="app-brand justify-content-center">
                                         <a href="index.html" class="app-brand-link gap-2">
-                                            <img src="{{ asset('front/images/logo.png') }}" alt="Shaheen Food"
+                                            <img src="{{ asset('front/images/acculogo.svg') }}" alt="Shaheen Food"
                                                 style="width: 20rem; padding: .5rem 2rem;" />
                                         </a>
                                     </div>
 
-                                    <h4 class="mb-2 text-center">Login</h4>
+                                    <h4 class="mb-2 text-center text-white">Login</h4>
                                     {{-- <p class="mb-4">Please sign-in to your account and start the adventure</p> --}}
 
                                     <form id="formAuthentication" class="mb-3" action="{{ route('custom_login') }}"
@@ -48,7 +48,7 @@
                                         @csrf
 
                                         <div class="mb-3">
-                                            <label for="phone_number" class="form-label">phone_number</label>
+                                            <label for="phone_number" class="form-label text-white">Phone Number</label>
                                             <input id="phone_number" type="phone_number"
                                                 class="form-control @error('phone_number') is-invalid @enderror"
                                                 name="phone_number" value="{{ old('phone_number') }}" required
@@ -63,7 +63,7 @@
 
 
                                         <div class="mb-3">
-                                            <label for="password" class="form-label">Password</label>
+                                            <label for="password" class="form-label text-white">Password</label>
                                             <input id="password" type="password"
                                                 class="form-control @error('password') is-invalid @enderror"
                                                 name="password" required autocomplete="current-password">
@@ -75,16 +75,16 @@
                                             @enderror
                                         </div>
                                         <div class="mb-4">
-                                            <button class="btn btn-primary d-grid w-100" type="submit">Sign in</button>
+                                            <button class="btn btn-primary d-grid w-100 text-white" type="submit">Sign in</button>
                                         </div>
                                     </form>
 
-                                    <p class="text-center mt-4">
+                                    <p class="text-center mt-4 text-white">
                                         <script>
                                             document.write(new Date().getFullYear());
                                         </script> Copyright to
                                         <a href="https://panacea.live" target="_blank"
-                                            class="footer-link fw-bolder">Panacea Live Ltd</a>
+                                            class="footer-link fw-bolder text-white">Panacea Live Ltd</a>
                                     </p>
                                 </div>
                             </div>

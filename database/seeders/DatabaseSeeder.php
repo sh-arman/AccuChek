@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
     {
 
         User::create([
-            'name' => 'Shaheen Food Admin (Arman)',
+            'name' => 'Admin (Arman)',
             'email' => 'arman@panacea.live',
             'password' => bcrypt('password'),
             'phone_number' => '01947423947',

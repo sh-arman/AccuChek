@@ -15,7 +15,7 @@
     <meta name="description" content=" | ACCU Chek Radiant LiveCheck liveCheck |  | ACCU Chek Radiant LiveCheck LiveCheck | ">
     <meta name="author" content="Shajedul Hasan Arman | armanhassan504@gmail.com | https://github.com/sh-arman | https://www.linkedin.com/in/armanhassan504">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="apple-touch-icon" href="{{ asset('front/images/panacealogo.png') }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('front/images/panacealogo.png') }}" />
     <link rel="stylesheet" href="{{ asset('front/css/livecheck.css') }}">
     <link rel="stylesheet" href="{{ asset('front/css/all.css') }}">
     <meta name="csrf-token" content="{{ csrf_token() }}">
