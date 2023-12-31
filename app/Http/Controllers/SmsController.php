@@ -14,7 +14,14 @@ class SmsController extends Controller
 {
     public function sms(Request $request)
     {
-        // return $request->all();
+        return 'The provided code is incorrect. Kindly request the accurate code or refrain from purchasing this product.';
+        return 'This device has been previously verified through contact at 01704****962. We advise against purchasing this device if the associated number is not connected to your family or someone familiar to you.';
+        return 'This device is authentic and bears the name ACCU-CHEK. It has been imported by Radiant Export Import Ent. For any inquiries or customer service, please feel free to call us at 09666 788 766.';
+        // return 'আপনার প্রদানকৃত কোডটি ভুল। অনুগ্রহ করে সঠিক  কোড  প্রদান করুন অথবা পণ্যটি ক্রয় করা থেকে বিরত থাকুন';
+        return 'ডিভাইসটি ২ ডিসেম্বর ০১৭০৪****৯৬২ নম্বর থেকে যাচাই করা হয়েছিল। নাম্বারটি পরিচিত না হলে পণ্যটি ক্রয় করা থেকে বিরত থাকুন';
+        // return 'ডিভাইসটি ২ ডিসেম্বর ০১৭০৪****৯৬২ নম্বর থেকে যাচাই করা হয়েছিল। নাম্বারটি আপনার বা আপনার পরিচিত জনের না হলে পণ্যটি ক্রয় করা থেকে বিরত থাকুন।';
+        return 'ডিভাইসটি অথেনটিক।ডিভাইসটির নাম ACCU-CHEK. ডিভাইসটি রেডিয়েন্ট এক্সপর্ট ইম্পর্ট এন্টারপ্রাইজ আমদানি করেছে। কাস্টমার সার্ভিস এর জন্য কল করুন ০৯৬৬৬ ৭৮৮ ৭৬৬। শনিবার-বৃহস্পতি বার, সকাল ৯টা – রাত ১০টা। সরকারি ছুটির দিন ব্যাতিত।';
+        // return 'Test Success আন্তরিক ধন্যবাদ';
         // return 'এই পণ্যটি আসল এবং অরিজিনাল পণ্যটি শাহীন ফুড সাপ্লাইয়ার্স কর্তৃক আমদানিকৃত পন্যটি ক্রয় করার জন্য আন্তরিক ধন্যবাদ।';
 
             $code = $request->sms;
@@ -23,7 +30,7 @@ class SmsController extends Controller
             if (strlen($code) >= 7)
             {
                      // return $request->msisdn;
-                    substr($code, 0, 3) == "SFS";
+                    substr($code, 0, 3) == "ACK";
                     $code = strtoupper(substr($code, 3));
                     $code = str_replace( ' ', '' , $code );
 

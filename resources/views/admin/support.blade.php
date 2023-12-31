@@ -1,5 +1,5 @@
 @extends('admin.layouts.layout')
-@section('title', 'Support | Shaheen Food Suppliers Admin Panel')
+@section('title', 'Support | ACCU Chek Radiant LiveCheck Admin Panel')
 @section('content')
 
 <div class="row">
@@ -9,7 +9,7 @@
                 {{-- <img class="mx-auto" src="{{ asset('admin/assets/img/banner.png') }}" alt="Panacea Live Ltd" style="width: 40rem;"/> --}}
                 <div class="col-sm-7">
                     <div class="card-body">
-                        <h5 class="card-title text-primary">Welcome to Shaheen Food Suppliers Support Panel</h5>
+                        <h5 class="card-title text-primary">Welcome to ACCU Chek Radiant LiveCheck Support Panel</h5>
                         <h6 class="mb-4">
                             Any kind of platform problem or maintanence issues please let us know on time.
                         </h6>
@@ -43,7 +43,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    {{-- <tr>
                         <td>Abdullah Md Taqi Ud-deen</td>
                         <td>Sales & Marketing</td>
                         <td>
@@ -52,8 +52,8 @@
                             <br>
                             <i class='text-primary bx bx-envelope'></i> &nbsp; abdullah@panacea.live
                         </td>
-                    </tr>
-                    <tr>
+                    </tr> --}}
+                    {{-- <tr>
                         <td>Md Maruf Hossen</td>
                         <td>Sales</td>
                         <td>
@@ -62,14 +62,14 @@
                             <br>
                             <i class='text-primary bx bx-envelope'></i> &nbsp; maruf@panacea.live
                         </td>
-                    </tr>
+                    </tr> --}}
 
                     <tr>
                         <td>Mrs. Mirazi Akhter Rabu</td>
                         <td>Admin & HR</td>
                         <td>
                             <i class='text-primary bx bx-phone'></i> &nbsp; +88
-                            <a href="tel:01734046809">01734046809</a>
+                            <a href="tel:01644984704">+880 1644-984704</a>
                             <br>
                             <i class='text-primary bx bx-envelope'></i> &nbsp; mira@panacea.live
                         </td>

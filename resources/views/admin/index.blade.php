@@ -1,6 +1,6 @@
 @extends('admin.layouts.layout')
 
-@section('title','Dashboard | Shaheen Food Suppliers Admin Panel')
+@section('title','Dashboard | ACCU Chek Radiant LiveCheck Admin Panel')
 
 @section('content')
 

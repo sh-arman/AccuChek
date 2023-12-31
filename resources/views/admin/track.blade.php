@@ -1,5 +1,5 @@
 @extends('admin.layouts.layout')
-@section('title', 'Track List | Shaheen Food Suppliers Admin Panel')
+@section('title', 'Track List | ACCU Chek Radiant LiveCheck Admin Panel')
 @section('content')
     {{-- Data Table --}}
     <div class="row">

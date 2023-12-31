@@ -12,8 +12,11 @@
     <meta charset="utf-8" />
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-    <meta name="description" content="SFS | Shaheen Food Product liveCheck | Shaheen Food suppliers | Shaheen LiveCheck | Panacea Live Ltd.">
+    <meta name="description" content="ACCU Chek Radiant liveCheck |ACCU Chek Radiant LiveCheck| Panacea Live Ltd.">
     <meta name="author" content="Shajedul Hasan Arman | armanhassan504@gmail.com | https://github.com/sh-arman | https://www.linkedin.com/in/armanhassan504">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ asset('front/images/panacealogo.png') }}" />
 
     <title>@yield('title')</title>
 

@@ -13,11 +13,11 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
     <meta name="description"
-        content="SFS | Shaheen Food Product liveCheck | Shaheen Food suppliers | Shaheen LiveCheck | Panacea Live Ltd.">
+        content="ACCU Chek Radiant liveCheck | ACCU Chek Radiant LiveCheck | LiveCheck | Panacea Live Ltd.">
     <meta name="author"
         content="Shajedul Hasan Arman | armanhassan504@gmail.com | https://github.com/sh-arman | https://www.linkedin.com/in/armanhassan504">
 
-    <title>Analytics | Shaheen Food Suppliers Admin Panel</title>
+    <title>Analytics | ACCU Chek Radiant LiveCheck Admin Panel</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('admin/assets/img/favicon/favicon.ico') }}" />
@@ -55,7 +55,7 @@
 
 
                         <nav class="card shadow-lg bg-white rounded navbar navbar-expand-lg">
-                            <a class="navbar-brand text-center" href="#" style="color: #F27022; font-weight: bold;">SHAHEEN <br> Food Suppliers Analytics</a>
+                            <img class="header-img-1" src="{{ asset('front/images/acculogo2.svg') }}" alt="ACCU Chek Radiant LiveCheck" style="width: 12rem; padding: .5rem;" />
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                               <span class="navbar-toggler-icon"></span>
                             </button>

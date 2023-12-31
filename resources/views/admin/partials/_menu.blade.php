@@ -6,7 +6,7 @@
         {{-- <span class="app-brand-logo demo">
         </span> --}}
         {{-- <span class="app-brand-text demo menu-text fw-bolder ms-2">Shaheen Food Suppliers</span> --}}
-        <img class="header-img-1" src="{{ asset('front/images/logo.png') }}" alt="Shaheen Food Suppliers Live Check" style="width: 12rem; padding: .5rem;" />
+        <img class="header-img-1" src="{{ asset('front/images/acculogo2.svg') }}" alt="ACCU Chek Radiant LiveCheck" style="width: 12rem; padding: .5rem;" />
         <span class="app-brand-text demo menu-text fw-bolder ms-2">
         </span>
       </a>

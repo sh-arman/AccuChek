@@ -31,7 +31,7 @@
   </head>
   <body>
       <table>
-        <p>Shaheen Food Suppliers - Live Check Report</p>
+        <p>ACCU Chek Radiant LiveCheck - Live Check Report</p>
         <p> From: {{ Carbon\Carbon::parse($sDate)->format('d M y') }} <br>
             To: {{ Carbon\Carbon::parse($eDate)->format('d M y') }}
         </p>

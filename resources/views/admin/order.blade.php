@@ -1,5 +1,5 @@
 @extends('admin.layouts.layout')
-@section('title', 'Order Code | Shaheen Food Suppliers Admin Panel')
+@section('title', 'Order Code | ACCU Chek Radiant LiveCheck Admin Panel')
 @section('content')
 
     <form action="{{ route('order_store') }}" method="POST">
