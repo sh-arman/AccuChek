@@ -11,6 +11,12 @@ body {
     font-family: 'Roboto', 'Hind Siliguri', sans-serif;
 }
 
+.liveinput {
+    border: 1px solid #000 !important;
+    border-radius: 5px;
+    text-align: left !important;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -124,7 +130,8 @@ a:hover {
 }
 
 .content-box {
-    padding-top: 10%;
+    /* background-color: #5c0000; */
+    /* padding-top: 10%; */
     /* margin-top: -5px; */
 }
 
@@ -239,7 +246,8 @@ a:hover {
     padding: 5px 20px;
     border: 0px;
     border-radius: 20px;
-    background: linear-gradient(354.07deg,  #005670 36.05%, #FFFFFF 233.47%);
+    background: linear-gradient(354.07deg,  #484747 36.05%, #FFFFFF 233.47%);
+    /* background: linear-gradient(354.07deg,  #005670 36.05%, #FFFFFF 233.47%); */
 }
 
 
@@ -265,6 +273,12 @@ footer {
     /* background-color: red; */
     color: #4267B2 !important;
     font-size: 35px;
+}
+
+.footer-items-logo {
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
 }
 
 .footer-items-logo-1 {

@@ -3,33 +3,35 @@
 
 
         <!-- logos -->
-        {{-- <div class="row">
+        <div class="row">
             <div class="col text-center">
                 <div class="mt-4">
-                    <p style="color: #000;">
-                        Sole Impoter and marketer <br> Shaheen Food Suppliers
+                    <p style="font-family: 'Hind Siliguri', sans-serif; font-weight: bold; color: #000;">
+                        Visit Links for more information and support
                     </p>
                 </div>
-                <img class="footer-items-logo-1" src="{{ asset('front/images/best_logo.png') }}">
-                <img class="footer-items-logo-2" src="{{ asset('front/images/life_logo.png') }}">
-                <img class="footer-items-logo-2" src="{{ asset('front/images/chefle_logo.png') }}">
+                <img class="footer-items-logo" src="{{ asset('front/images/image 1.png') }}">
+                <img class="footer-items-logo" src="{{ asset('front/images/image 2.png') }}">
+                <img class="footer-items-logo" src="{{ asset('front/images/image 3.png') }}">
             </div>
-        </div> --}}
+        </div>
 
 
-        <div class="row">
+        <div class="row mt-4">
             <div class="col text-center">
                 <a href="https://www.accu-chek.com.bd/" class="footer_item" target="_blank">
                     {{-- <i class="fab fa-facebook"></i> --}}
                     <i class="fa fa-globe" aria-hidden="true"></i>
                 </a>
-                {{-- <a href="https://shaheenfood.com.bd" class="footer_item" target="_blank"">
-                    <i class="fa fa-globe" aria-hidden="true"></i>
-                    <img class="logo-4" src="{{ asset('front/images/websiteIcon.png') }}">
+
+                <a href="https://www.accu-chek.com.bd/" class="footer_item" target="_blank">
+                    <i class='fab fa-youtube' style=' color:red'></i>
                 </a>
-                <a href="https://www.flipsnack.com/E7A7A677C6F/digital-catalog-shaheen-food-suppliers/full-view.html" class="footer_item-3" target="_blank"">
-                    <img class="footer-items-logo-3" src="{{ asset('front/images/catalogIcon.png') }}">
-                </a> --}}
+
+
+                <a href="https://www.accu-chek.com.bd/" class="footer_item" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
             </div>
         </div>
 
