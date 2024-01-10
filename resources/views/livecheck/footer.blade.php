@@ -1,9 +1,11 @@
 <footer class="footer" id="footer">
-    <div class="container">
+    <img class="footer_product" src="{{ asset('front/images/footer-product.svg') }}">
+    {{-- <div class="container"> --}}
+
 
 
         <!-- logos -->
-        <div class="mt-4">
+        {{-- <div class="mt-4">
             <p style="font-weight: bold; color: #fff; display: inline-block; background: #0098a6; padding: 2px 8px; border-radius: 5px;">
                 Find Out more Products
             </p>
@@ -23,7 +25,7 @@
                     <p style="font-weight: bold; color: #0098a6">Accu-Chek Active</p>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
 
         <div class="row mt-4">
@@ -48,6 +50,6 @@
         </div>
 
 
-        <div>
-        </div>
+
+    {{-- </div> --}}
 </footer>
