@@ -9,14 +9,23 @@
     --------------------------------------------------------------------------- --}}
 @section('content')
 
-    <div class="content-box">
-
         @include('livecheck.response')
 
 
         {{-- Code Div --}}
         <div id="CodeDiv" class="justify-content-center">
-            <div class="d-flex justify-content-between ">
+            <div class="d-flex flex-row-reverse">
+                @if (Session::has('locale'))
+                    @if (Session::get('locale') == 'bn')
+                        <a class="btnlng" id="btnlang" href="{{ route('locale.setting', 'en') }}" role="button">English</a>
+                    @elseif(Session::get('locale') == 'en')
+                        <a class="btnlng" id="btnlang" style="font-family: 'Hind Siliguri', sans-serif;" href="{{ route('locale.setting', 'bn') }}" role="button">বাংলা</a>
+                    @endif
+                @else
+                    <a class="btnlng" id="btnlang" href="{{ route('locale.setting', 'en') }}" role="button">English</a>
+                @endif
+            </div>
+            {{-- <div class="d-flex justify-content-between ">
                 <div>
                     <a class="btnlng" href="https://www.accu-chek.com.bd/" target="_blank" >Online Warranty</a>
                 </div>
@@ -31,8 +40,8 @@
                         <a class="btnlng" id="btnlang" href="{{ route('locale.setting', 'en') }}" role="button">English</a>
                     @endif
                 </div>
-            </div>
-
+            </div> --}}
+            <label style="text-transform: uppercase; font-weight: bold; font-size: 18px; color: #ffffff;" for="">Verify your product</label>
             {{-- <p id="CodeNull" class="error none">{{ __('translate.code-error-null') }}</p>
             <p id="CodeWrong" class="error none">{{ __('translate.code-error') }}</p> --}}
             <input style="text-transform: uppercase;" type="text" class="input mx-auto mb-4" name="code" id="code" minlength="11" autocomplete="off"
@@ -69,7 +78,11 @@
             <button id="retryBtn" type="button" class="btnverify none">{{ __('translate.btn-retry') }}</button>
         </div>
 
-    </div>
+
+        <a class="" href="https://www.accu-chek.com.bd/" target="_blank">
+            <img class="warranty" src="{{ asset('front/images/warranty.svg') }}">
+        </a>
+
 @endsection
 
 

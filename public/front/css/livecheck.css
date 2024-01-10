@@ -65,7 +65,8 @@ a:hover {
     /* height: 28%; */
     /* height: 35vh; */
     /* height: 35%; */
-    height: 30vh;
+    height: 20vh;
+    /* background: #000; */
     position: relative;
     background: rgb(128,193,102);
     background: -moz-linear-gradient(90deg, rgba(128,193,102,1) 0%, rgba(52,191,203,1) 100%);
@@ -73,20 +74,17 @@ a:hover {
     background: linear-gradient(90deg, rgba(128,193,102,1) 0%, rgba(52,191,203,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#80c166",endColorstr="#34bfcb",GradientType=1);
 }
-
 .hero-img {
     z-index: 1;
     width: 100%;
     position: absolute;
     bottom: 0;
 }
-
 .hero-items {
     text-align: center;
     z-index: 2 !important;
     position: absolute;
     width: 100%;
-    /* top: 10%; */
     top: 15%;
 }
 
@@ -115,7 +113,8 @@ a:hover {
     position: relative;
     display: block;
     text-align: center;
-    height: 80vh;
+    height: 75vh;
+    /* background-color: #5c0000; */
 
     background: rgb(128,193,102);
     background: -moz-linear-gradient(90deg, rgba(128,193,102,1) 0%, rgba(52,191,203,1) 100%);
@@ -126,7 +125,6 @@ a:hover {
     /* height: 80vh; */
     /* height: 100%; */
     /* height: 65%; */
-    /* background-color: red; */
 }
 /* .item img {
     height: 28px;
@@ -138,11 +136,7 @@ a:hover {
     font-weight: 600;
     line-height: 1;
 } */
-.content-box {
-    /* background-color: #5c0000; */
-    /* padding-top: 10%; */
-    /* margin-top: -5px; */
-}
+
 .response-box {
     margin-top: -5%;
     padding-bottom: 25px;
@@ -153,7 +147,7 @@ a:hover {
     color: #5c0000;
     padding-bottom: 15px;
 }
-.content-box input {
+.content input {
     /* font-size: 18px; */
     font-size: 22px;
     padding: 10px 20px;
@@ -170,7 +164,7 @@ a:hover {
     line-height: 23px;
 }
 
-.content-box input:focus {
+.content input:focus {
     outline: none;
 }
 
@@ -236,7 +230,7 @@ a:hover {
     color: #fff;
     text-align: center;
     /* width: 75px; */
-    width: 70px;
+    /* width: 70px; */
     border: 0;
     border-radius: 20px;
     padding: 5px 15px;
@@ -260,17 +254,26 @@ a:hover {
     /* background: linear-gradient(354.07deg,  #005670 36.05%, #FFFFFF 233.47%); */
 }
 
+.warranty {
+    width: 150px;
+    margin-top: 2rem;
+    z-index: 5;
+}
+
 
 footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+    height: 20vh;
     /* margin-bottom: 10px; */
     background: #ffffff;
 }
 
 .footer_product {
+    /* position: absolute; */
     width: 100% !important;
+    z-index: 3;
     /* background-color: red; */
 }
 
