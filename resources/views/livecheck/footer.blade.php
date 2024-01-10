@@ -1,5 +1,20 @@
 <footer class="footer" id="footer">
-    <img class="footer_product" src="{{ asset('front/images/footer-product1.svg') }}">
+    <img class="footer_product" src="{{ asset('front/images/Group.svg') }}">
+
+    <div class="d-flex justify-content-center footer_product_div">
+        <div class="col-sm-4 col-xm-4 col-4">
+            <img class="footer-items-logo-1" src="{{ asset('front/images/m1.svg') }}">
+            {{-- <p style="font-weight: bold; color: #0098a6">Accu-Chek Instant</p> --}}
+        </div>
+        <div class="col-sm-4 col-xm-4 col-4">
+            <img class="footer-items-logo-2" src="{{ asset('front/images/m2.svg') }}">
+            {{-- <p style="font-weight: bold; color: #0098a6">Accu-Chek Instant S</p> --}}
+        </div>
+        <div class="col-sm-4 col-xm-4 col-4">
+            <img class="footer-items-logo-3" src="{{ asset('front/images/m3.svg') }}">
+            {{-- <p style="font-weight: bold; color: #0098a6">Accu-Chek Active</p> --}}
+        </div>
+    </div>
 
 
 
