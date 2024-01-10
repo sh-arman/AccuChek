@@ -1,6 +1,6 @@
 <footer class="footer" id="footer">
     <img class="footer_product" src="{{ asset('front/images/footer-product1.svg') }}">
-    {{-- <div class="container"> --}}
+
 
 
 
@@ -28,28 +28,30 @@
         </div> --}}
 
 
+    <div class="container">
         <div class="row mt-4">
             <div class="col text-center">
                 <h6 style="font-weight: bold; color: #000;">
                     Visit Links for more information and support
                 </h6>
-                <hr style="border: 2px solid #0098a6;">
+                <hr style="border: 2px solid rgba(128,193,102,1);">
                 <a href="https://www.accu-chek.com.bd/" class="footer_item" target="_blank">
                     <i class="fa fa-globe" aria-hidden="true"></i>
                 </a>
 
-                <a href="https://www.accu-chek.com.bd/" class="footer_item" target="_blank">
+                <a href="https://youtube.com/@chekdiabetes.radiant" class="footer_item" target="_blank">
                     <i class='fab fa-youtube' style=' color:red'></i>
                 </a>
 
 
-                <a href="https://www.accu-chek.com.bd/" class="footer_item" target="_blank">
+                <a href="https://www.facebook.com/chekdiabetes.radiant?mibextid=ZbWKwL" class="footer_item" target="_blank">
                     <i class="fab fa-facebook"></i>
+                </a>
+
+                <a href="https://www.accu-chek.com.bd/contact-us" class="footer_item" target="_blank">
+                    <i class="fa fa-phone"></i>
                 </a>
             </div>
         </div>
-
-
-
-    {{-- </div> --}}
+    </div>
 </footer>
