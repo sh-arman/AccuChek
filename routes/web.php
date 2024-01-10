@@ -46,8 +46,8 @@ Route::post('/codeVerify', [CheckController::class, 'codeVerify'])->name('codeVe
 Route::post('/phoneVerify', [CheckController::class, 'phoneVerify'])->name('phoneVerify');
 Route::post('/liveCheck', [CheckController::class, 'liveCheck'])->name('liveCheck');
 // Auth  --------------------------------------------------------------------------------------------------------
-// Auth::routes();
-// Route::post('/custom-login', [Controller::class, 'custom_login'])->name('custom_login');
+Auth::routes();
+Route::post('/custom-login', [Controller::class, 'custom_login'])->name('custom_login');
 // Route::post('/custom-register', [Controller::class, 'custom_register'])->name('custom_register');
 
 

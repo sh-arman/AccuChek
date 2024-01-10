@@ -72,7 +72,7 @@ class OrderController extends Controller
 
             foreach ($collection->get()->chunk($chunk) as $codes) {
                 foreach ($codes as $code) {
-                    fputcsv($handle, ["SFS " . $code->code ]);
+                    fputcsv($handle, ["ACK " . $code->code ]);
                 }
             }
 

@@ -115,7 +115,7 @@
                                     If not, you can go back and change it.
                                 </h4>
                                 <h4 class="card-text text-center">
-                                    <b>Your message will look like: </b> <p class="text-primary"> SFS MCKRTWS </p>
+                                    <b>Your message will look like: </b> <p class="text-primary"> ACK MCKRTWS </p>
                                 </h4>
                             </div>
                         </div>

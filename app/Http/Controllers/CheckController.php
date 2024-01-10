@@ -30,7 +30,7 @@ class CheckController extends Controller
             $response = ['CodeNull' => 'CodeNull'];
         } else {
             if (strlen($code) >= 7) {
-                if (strtoupper(substr($code, 0, 3)) == "SFS") {
+                if (strtoupper(substr($code, 0, 3)) == "ACK") {
                     $code = substr($code, 3);
                 }
                 $code = strtoupper($code);

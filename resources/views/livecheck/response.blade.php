@@ -1,11 +1,14 @@
 {{-- ================================================= First Time ==================================================== --}}
 <div class="response-box" id="firsttimeDiv">
-    <h6>{{trans('translate.first_heading')}}</h6>
+    <h4>{{trans('translate.first_heading')}}</h4>
     <div class="info">
-        <p id="product">{{ __('translate.product') }}</p>
+        <p id="first_response">{{ __('translate.first_response') }}</p>
+        <br>
+        <a class="btnlng" href="https://www.accu-chek.com.bd/" target="_blank" >Online Warranty</a>
+        {{-- <p id="product">{{ __('translate.product') }}</p>
         <p id="detail">{{ __('translate.detail') }}</p>
         <p id="number">{{ __('translate.number') }}</p>
-        <p id="company_name"><span class="bold-title">{{ __('translate.company_name') }}</span>&nbsp;</p>
+        <p id="company_name"><span class="bold-title">{{ __('translate.company_name') }}</span>&nbsp;</p> --}}
     </div>
     {{-- <div class="info">
         <p id="manufacture"><span class="bold-title">{{ __('translate.manufacture') }} :</span>&nbsp;</p>
@@ -22,16 +25,17 @@
 {{-- ================================================= Verified ==================================================== --}}
 <div class="response-box" id="verifiedDiv">
 
-    <h6>{{trans('translate.verified_heading')}}</h6>
+    <h4>{{trans('translate.verified_heading')}}</h4>
 
-    {{-- <div class="info">
-        <p id="verified_manufacture"><span class="bold-title">{{ __('translate.manufacture') }} :</span>&nbsp;</p>
+    <div class="info">
+        {{-- <p id="verified_response">{{ __('translate.verified_response') }}</p> --}}
+        {{-- <p id="verified_manufacture"><span class="bold-title">{{ __('translate.manufacture') }} :</span>&nbsp;</p>
         <p id="verified_product"><span class="bold-title">{{ __('translate.product') }} :</span> &nbsp;</p>
         <p id="verified_detail"><span class="bold-title">{{ __('translate.detail') }} :</span> &nbsp;</p>
         <p id="verified_manufacture_date"><span class="bold-title">{{ __('translate.manufacture_date') }} :</span>&nbsp;</p>
-        <p id="verified_expiry"><span class="bold-title">{{ __('translate.expiry') }} :</span>&nbsp;</p>
+        <p id="verified_expiry"><span class="bold-title">{{ __('translate.expiry') }} :</span>&nbsp;</p> --}}
 
-    </div> --}}
+    </div>
 
     <div class="warning">
         <p>{{ trans('translate.warning') }}</p>
@@ -42,8 +46,8 @@
         <p id="verified_preNumber"><span class="bold-title">{{ __('translate.previous_number') }} :</span>&nbsp;</p>
         <p id="verified_preDate"><span class="bold-title">{{ __('translate.previous_date') }} :</span>&nbsp;</p>
         <p id="verified_totalCount"><span class="bold-title">{{ __('translate.total_count') }} :</span>&nbsp;</p>
-        <p id="number" class="bold-title">{{ __('translate.complain_number') }}</p>
-        <p id="company_name"><span class="bold-title">{{ __('translate.company_name') }} </span>&nbsp;</p>
+        {{-- <p id="number" class="bold-title">{{ __('translate.complain_number') }}</p> --}}
+        {{-- <p id="company_name"><span class="bold-title">{{ __('translate.company_name') }} </span>&nbsp;</p> --}}
     </div>
 
 </div>
@@ -84,10 +88,10 @@
 {{-- ================================================= CodeWrong ==================================================== --}}
 <div class="error none" id="CodeWrong">
     <p>{{ __('translate.code-error') }}
-        <br>
-        {{ __('translate.company_name') }}
-        <br>
-        {{ __('translate.complain_number') }}
+        {{-- <br> --}}
+        {{-- {{ __('translate.company_name') }} --}}
+        {{-- <br> --}}
+        {{-- {{ __('translate.complain_number') }} --}}
     </p>
 </div>
 

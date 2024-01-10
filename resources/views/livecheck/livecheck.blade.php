@@ -16,22 +16,26 @@
 
         {{-- Code Div --}}
         <div id="CodeDiv" class="justify-content-center">
-            {{-- <div class="d-flex flex-row-reverse">
-                @if (Session::has('locale'))
-                    @if (Session::get('locale') == 'bn')
+            <div class="d-flex justify-content-between ">
+                <div>
+                    <a class="btnlng" href="https://www.accu-chek.com.bd/" target="_blank" >Online Warranty</a>
+                </div>
+                <div>
+                    @if (Session::has('locale'))
+                        @if (Session::get('locale') == 'bn')
+                            <a class="btnlng" id="btnlang" href="{{ route('locale.setting', 'en') }}" role="button">English</a>
+                        @elseif(Session::get('locale') == 'en')
+                            <a class="btnlng" id="btnlang" style="font-family: 'Hind Siliguri', sans-serif;" href="{{ route('locale.setting', 'bn') }}" role="button">বাংলা</a>
+                        @endif
+                    @else
                         <a class="btnlng" id="btnlang" href="{{ route('locale.setting', 'en') }}" role="button">English</a>
-                    @elseif(Session::get('locale') == 'en')
-                        <a class="btnlng" id="btnlang" style="font-family: 'Hind Siliguri', sans-serif;" href="{{ route('locale.setting', 'bn') }}" role="button">বাংলা</a>
                     @endif
-                @else
-                    <a class="btnlng" id="btnlang" href="{{ route('locale.setting', 'en') }}" role="button">English</a>
-                @endif
-            </div> --}}
+                </div>
+            </div>
 
             {{-- <p id="CodeNull" class="error none">{{ __('translate.code-error-null') }}</p>
             <p id="CodeWrong" class="error none">{{ __('translate.code-error') }}</p> --}}
-            <label style="font-family: 'Hind Siliguri', sans-serif; font-weight: bold;">Verify your product</label>
-            <input style="text-transform: uppercase;" type="text" class="input liveinput mx-auto mb-4" name="code" id="code" minlength="11" autocomplete="off"
+            <input style="text-transform: uppercase;" type="text" class="input mx-auto mb-4" name="code" id="code" minlength="11" autocomplete="off"
                 placeholder="{{ __('translate.lebel-code') }}" value="ACK " required />
         </div>
 
@@ -60,8 +64,6 @@
         {{-- Buttons --}}
         <div class="justify-content-center">
             <button id="nextBtn" type="button" class="btnverify">{{ __('translate.btn-next') }}</button>
-            {{-- <button id="onlineBtn" type="button" href=""  class="btnverify">Online warrenty</button> --}}
-            <a style="color: #fff;" href="https://www.accu-chek.com.bd/register-your-meter-warranty-online" id="onlineBtn" type="button" class="btnverify">Online warrenty</a>
             <button id="checkBtn" type="button" class="btnverify none">{{ __('translate.btn-check') }}</button>
             <button id="doneBtn" type="button" class="btnverify none">{{ __('translate.btn-done') }}</button>
             <button id="retryBtn" type="button" class="btnverify none">{{ __('translate.btn-retry') }}</button>
@@ -79,7 +81,6 @@
         var CodeVerifyUrl = "{{ url('codeVerify') }}";
         var PhoneVerifyUrl = "{{ url('phoneVerify') }}";
         var LiveVerifyUrl = "{{ url('liveCheck') }}";
-        var OnlineUrl = "{{ url('https://www.accu-chek.com.bd/register-your-meter-warranty-online') }}";
 
         $(document).ready(function() {
             $("#nextBtn").attr("onclick", "BtnFunction()");
@@ -93,13 +94,13 @@
 
             // footer hide/unhide when input box active
             // const button = document.querySelector('#code');
-            document.querySelector('#code').addEventListener('click', () => {
+            // document.querySelector('#code').addEventListener('click', () => {
                 // $("#footer").hide();
                 // window.setTimeout(() => {
                 //     $("#footer").show();
                 // }, 30000);
-                // $("#content").css("height", "160%");
-            });
+                //  $("#content").css("height", "160%");
+            //  });
 
             document.querySelector('#nextBtn').addEventListener('click', () => {
                 // $("#content").css("height", "160%");
@@ -150,9 +151,10 @@
                     if (response.hasOwnProperty("CodeNull")) {
                         $("#CodeWrong").hide();
                         $("#CodeNull").delay(100).fadeIn();
+                        $("#content").css("height", "100%");
                     }
                     if (response.hasOwnProperty("CodeWrong")) {
-                        // $("#content").css("height", "170%");
+                        $("#content").css("height", "100%");
                         $("#CodeNull").hide();
                         document.getElementById('CodeWrong').className = 'classname';
                         $("#CodeWrong").delay(100).slideDown();
@@ -211,12 +213,14 @@
                         $("#PhoneLevel").hide();
                         $("#PhoneNull").hide();
                         $("#PhoneError").fadeIn();
+                        $("#content").css("height", "110%");
                     }
 
                     if (response.hasOwnProperty("PhoneNull")) {
                         $("#PhoneLevel").hide();
                         $("#PhoneError").hide();
                         $("#PhoneNull").fadeIn();
+                        $("#content").css("height", "110%");
                     }
                 }
             });
@@ -256,15 +260,15 @@
                         $("#verfiedIcon").delay(100).slideDown();
 
 
-                        $("#hero").css("height", "25%");
-                        $("#content").css("height", "140%");
+                        // $("#hero").css("height", "29%");
+                        $("#content").css("margin-top", "19%");
+                        $("#content").css("height", "110%");
 
                         $("#firsttimeDiv").delay(100).slideDown();
-
-                        $("#product").append();
-                        $("#detail").append();
-                        $("#number").append();
-                        $("#company_name").append();
+                        $("#first_response").append();
+                        // $("#detail").append();
+                        // $("#number").append();
+                        // $("#company_name").append();
 
                         // $("#manufacture").append(response.manufacture);
                         // $("#product").append(response.product);
@@ -283,13 +287,14 @@
                         $("#checkBtn").hide();
                         $("#doneBtn").show();
 
-                        $("#logos").hide();
-                        $("#verfiedIcon").delay(100).slideDown();
-
-                        $("#hero").css("height", "25%");
-                        $("#content").css("height", "160%");
+                        //$("#logos").hide();
+                        //$("#verfiedIcon").delay(100).slideDown();
+                        // $("#hero").css("height", "25%");
+                        $("#content").css("margin-top", "19%");
+                        $("#content").css("height", "150%");
 
                         $("#verifiedDiv").delay(100).slideDown();
+                        $("#verified_response").append();
 
                         // $("#verified_manufacture").append(response.verified_manufacture);
                         // $("#verified_product").append(response.verified_product);
@@ -300,13 +305,13 @@
 
                         // $("#product").append();
                         // $("#detail").append();
-                        $("#number").append();
+
 
                         $("#verified_preNumber").append(response.verified_preNumber);
                         $("#verified_preDate").append(response.verified_preDate);
                         $("#verified_totalCount").append(response.verified_totalCount);
 
-                        $("#company_name").append();
+                        // $("#company_name").append();
                     }
 
 

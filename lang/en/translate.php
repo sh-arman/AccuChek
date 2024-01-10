@@ -6,12 +6,7 @@
         'lebel-otp' => 'Enter otp',
 
         'code-error-null' => 'Enter 7 digit code',
-
-        'code-error' => 'The code is not correct. Enter the correct code and verify it again. If this message
-        comes back again, the product may be fake, so before purchasing the product,
-        call the company to make sure that the product is genuine or fake.',
-        // Complaint: 01711661184, 01912220704
-        // Shaheen Food Suppliers',
+        'code-error' => 'Code is incorrect. Kindly input the accurate code or refrain from purchasing this product.',
 
 
         'phone-error-null' => 'Enter correct phone number',
@@ -21,15 +16,15 @@
         'live-error' => 'OTP does not matched',
 
         // buttons
-        'btn-next' => 'Next',
+        'btn-next' => 'Verify',
         'btn-check' => 'Check',
         'btn-done' => 'Done',
         'btn-retry' => 'Verify Again',
 
         //
-        'previous_number' => 'Previously verified by',
-        'previous_date' => 'Date of 1st verification',
-        'total_count' => 'Total number of Verification',
+        'previous_number' => 'Previously Verified By',
+        'previous_date' => 'Date of 1st Verification',
+        'total_count' => 'Total Number of Verification',
 
          //
          'otp-send' => 'OTP sent to',
@@ -38,6 +33,9 @@
         'first_heading' => 'This product is genuine and original',
         'verified_heading' => 'The product has been previously verified',
         'expired_heading' => 'Expired',
+
+        'first_response' => 'Your ACCU-CHEK device is Authentic. It has been imported by Radiant. For warranty registration, please visit – ',
+        'verified_response' => 'This device has been previously verified by someone. Please do not purchase this meter if the associated number is not connected to your family or someone familiar to you.',
 
 
 
@@ -57,7 +55,8 @@
         'expiry' => 'Expiry Date',
         'batch' => 'Batch No',
 
-        'warning' => 'Please do not purchase the product if the phone number of the first verifier is not yours or someone you know.',
+        'warning' => 'This device has been previously verified by someone. Please do not purchase this meter if the associated number is not connected to your family or someone familiar to you.',
+        // 'warning' => 'Please do not purchase the product if the phone number of the first verifier is not yours or someone you know.',
         'company_name' => 'Shaheen Food Suppliers ',
         'expired_warning' => 'This product is expired and do not use it',
 

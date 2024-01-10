@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="{{ asset('front/css/livecheck.css') }}">
     <link rel="stylesheet" href="{{ asset('front/css/all.css') }}">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>ACCU Chek Radiant LiveCheck</title>
+    <title>ACCU-CHEK Radiant LiveCheck</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
         {{-- <img class="hero-img" src="{{ asset('front/images/bg2.svg') }}" alt="Background_image"> --}}
         <div class="hero-items">
             <div id="logos">
-                <div> <img class="hero-items-logo logo-1 mb-4" src="{{ asset('front/images/acculogo.svg') }}"> </div>
+                <div> <img class="hero-items-logo logo-1 mb-2" src="{{ asset('front/images/acculogo.svg') }}"> </div>
                 <div> <img class="hero-items-logo logo-2" src="{{ asset('front/images/live_check.svg') }}"> </div>
             </div>
 
