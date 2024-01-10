@@ -1,5 +1,5 @@
 <footer class="footer" id="footer">
-    <img class="footer_product" src="{{ asset('front/images/footer-product.svg') }}">
+    <img class="footer_product" src="{{ asset('front/images/footer-product1.svg') }}">
     {{-- <div class="container"> --}}
 
 
